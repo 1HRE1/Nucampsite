@@ -28,7 +28,7 @@
             <h2>a better way to camp</h2>
           </div>
           <div class="col-md-4 col-xl-2 mt-4">
-            <button type="button" data-toggle="modal" data-toggle="tooltip" title="or call us at 1-206-555-1234" data-target="#reserveModal" class="btn-info border-white">Reserve A Campsite</button>    
+            <button type="button" data-toggle="modal" data-target="#reserveModal" class="btn-info border-white">Reserve A Campsite</button>    
           </div>
         </div>
       </div>
@@ -302,26 +302,8 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-      $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-      })
-  </script>
-  <script>
-    $(function() {
-        $(".carousel").carousel( { interval: 2000 } );
-        $("#carouselButton").click(function(){
-            if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-                $(".carousel").carousel("pause");
-                $("#carouselButton").children("i").removeClass("fa-pause");
-                $("#carouselButton").children("i").addClass("fa-play");
-            } else {
-                $(".carousel").carousel("cycle");
-                $("#carouselButton").children("i").removeClass("fa-play");
-                $("#carouselButton").children("i").addClass("fa-pause"); 
-            }
-        });
-    });
-</script>
+    <script src="js/scripts.js"></script>
+  
+
   </body>
 </html>
