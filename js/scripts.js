@@ -12,3 +12,15 @@ $(function() {
         }
     });
 });
+
+$(document).ready(function() {
+    // Activate Reserve Campsite Modal
+    $('#reserveButton').click(function() {
+      $('#reserveModal').modal('show');
+    });
+  
+    // Activate Login Modal
+    $('#loginButton').click(function() {
+      $('#loginModal').modal('show');
+    });
+  });
